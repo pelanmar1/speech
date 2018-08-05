@@ -44,6 +44,8 @@ function createAndSetupClient() {
         console.log(response);
         setText(response.text);
         stop();
+        executeCommand(response.text);
+
     }
 
     client.onError = function (code, requestId) {
